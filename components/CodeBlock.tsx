@@ -2,7 +2,7 @@ import { StreamLanguage } from '@codemirror/language';
 import { go } from '@codemirror/legacy-modes/mode/go';
 import CodeMirror from '@uiw/react-codemirror';
 import { FC, useEffect, useState } from 'react';
-import {cobalt} from 'thememirror';
+import {smoothy} from 'thememirror';
 interface Props {
   code: string;
   editable?: boolean;
@@ -47,7 +47,7 @@ export const CodeBlock: FC<Props> = ({
         value={code}
         minHeight="500px"
         extensions={[StreamLanguage.define(go)]}
-        theme={cobalt}
+        theme={smoothy}
         onChange={(value) => onChange(value)}
       />
     </div>
