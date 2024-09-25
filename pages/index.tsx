@@ -1,7 +1,3 @@
-// types/types.ts
-export type OpenAIModel = 'gpt-3.5-turbo' | 'gpt-4' | 'gpt-4o-mini' | 'o1-preview' | 'o1-mini';
-
-// pages/index.tsx
 import { APIKeyInput } from '@/components/APIKeyInput';
 import { CodeBlock } from '@/components/CodeBlock';
 import { LanguageSelect } from '@/components/LanguageSelect';
