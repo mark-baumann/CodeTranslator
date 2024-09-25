@@ -1,0 +1,40 @@
+{
+  "name": "code-translate",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@codemirror/legacy-modes": "^6.3.2",
+    "@dqbd/tiktoken": "^1.0.16",
+    "@uiw/react-codemirror": "^4.19.11",
+    "directory-tree": "^3.5.1",
+    "endent": "^2.1.0",
+    "eventsource-parser": "^1.0.0",
+    "jszip": "^3.10.1",
+    "next": "13.2.4",
+    "openai-gpt-token-counter": "^1.1.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.1",
+    "react-toastify": "^9.1.2",
+    "react-treebeard": "^3.2.4",
+    "thememirror": "^2.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "18.15.11",
+    "@types/react": "18.0.31",
+    "@types/react-dom": "18.0.11",
+    "autoprefixer": "^10.4.14",
+    "eslint": "8.37.0",
+    "eslint-config-next": "13.2.4",
+    "postcss": "^8.4.21",
+    "prettier-plugin-tailwindcss": "^0.2.6",
+    "tailwindcss": "^3.3.1",
+    "typescript": "5.0.3"
+  }
+}

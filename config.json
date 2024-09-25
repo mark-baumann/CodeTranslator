@@ -1,0 +1,10 @@
+{
+    "languages": [
+      { "value": "Angular JS", "label": "Angular JS"},
+      { "value": "Vue", "label": "Vue" },
+      {"value": "Python", "label": "Python"},
+      {"value": "JavaScript", "label": "JavaScript"},
+      {"value": "Delphi", "label": "Delphi"},
+      {"value": "Go", "label": "Go"}
+    ]
+  }
