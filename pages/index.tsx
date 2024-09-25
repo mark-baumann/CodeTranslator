@@ -1,3 +1,6 @@
+// types/types.ts
+export type OpenAIModel = 'gpt-3.5-turbo' | 'gpt-4' | 'gpt-4o-mini' | 'o1-preview' | 'o1-mini';
+
 // pages/index.tsx
 import { APIKeyInput } from '@/components/APIKeyInput';
 import { CodeBlock } from '@/components/CodeBlock';
@@ -23,8 +26,6 @@ export default function Home() {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [toastText, setToastText] = useState('');
   const [textboxValue, setTextboxValue] = useState<string>("");
-
-
 
   // Initialisierung der Token- und Kostenanzeige mit Standardwerten
   const [tokenCounts, setTokenCounts] = useState<{
@@ -372,7 +373,7 @@ export default function Home() {
         </div>
 
         <div className="mt-2 flex items-center space-x-2">
-          <ModelSelect model={model} onChange={(value) => setModel(value)} />
+          <ModelSelect model={model} onChange={(value) => setModel(value as OpenAIModel)} />
           <button
             className="w-[140px] cursor-pointer rounded-md bg-red-600 px-4 py-2 font-bold border-black text-black"
             onClick={() => handleTranslate()}
@@ -497,4 +498,3 @@ export default function Home() {
     </>
   );
 }
- 
